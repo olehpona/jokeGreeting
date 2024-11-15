@@ -1,4 +1,4 @@
-#jokeGreeting
+# jokeGreeting
 This is simple app that will add to your /etc/motd.d new joke on every login.
 It also have some setup like params from joke api or auto installation or uninstallation
 ```
