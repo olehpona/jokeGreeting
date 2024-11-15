@@ -117,7 +117,7 @@ fn generate_script(args: Args) -> Result<(), Box<dyn std::error::Error>>{
     let mut file = File::create(current_path.as_path().join(Path::new("start.sh")))?;
     file.write_all(format!("{}/jokeGreeting {} &> /dev/null", current_path.to_str().unwrap(), generate_args_string(args)).as_bytes())?;
 
-    set_permissions(current_path.as_path(), Permissions::from_mode(0o744))?;
+    set_permissions(current_path.as_path(), Permissions::from_mode(0o755))?;
     Ok(())
 }
 
